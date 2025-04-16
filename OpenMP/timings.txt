@@ -1,0 +1,4 @@
+Sharpe Ratio:
+Serial computation time: 0.001480 seconds
+Parallel computation time: 0.000530 seconds
+S = 2.79
