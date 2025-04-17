@@ -20,6 +20,7 @@ A parallel C program that estimates the price of a European call option using Mo
 
 
 **Real-Time Portfolio Monitor with Risk Alerts**
+
 Plan:
 Rank 0 simulates a "market feed", sending price updates (random walk)
 Other ranks:
