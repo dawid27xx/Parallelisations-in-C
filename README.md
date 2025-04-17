@@ -8,13 +8,13 @@ This repo contains small C projects exploring parallelisation in finance. Each p
 
 ### OpenMP
 
-**Parallelised Sharpe Ratio Calculator (OpenMP C Project)**
+**Parallelised Sharpe Ratio Calculator**
 
 A simple C program that uses OpenMP to speed up the calculation of rolling Sharpe ratios on sample stock return data. It reads returns from a CSV file, processes them in parallel, and prints out the average and annualised Sharpe ratio. Multiple methods for synchronisation were also considered (critical regions, atomic operations and mutexes).
 
 ### OpenMPI
 
-**Monte Carlo Parallel Option Pricing (OpenMPI C Project)**
+**Monte Carlo Parallel Option Pricing**
 
 A parallel C program that estimates the price of a European call option using Monte Carlo simulation and MPI. Each process receives a unique volatility value, performs local simulations, and contributes its result using MPI_Scatter, MPI_Gather, and MPI_Bcast. The project explores how volatility affects option pricing while demonstrating core MPI communication patterns.
 
