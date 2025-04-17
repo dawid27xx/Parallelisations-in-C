@@ -117,18 +117,6 @@ int main(int argc, char** argv) {
         printf("  Total Simulations: %d\n", localSimulationN * numprocs);
     };
 
-    // send final price to all processes using point-to-point communication 
-    if (rank == 0) {
-        for (int i=1; i<numprocs; i++) {
-            MPI_Send(&price, 1, MPI_DOUBLE, i, 0, MPI_COMM_WORLD);
-        };
-    }
-
-    if (rank != 0) {
-        MPI_Recv(&price, 1, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, NULL);
-    };
-
-
     if (rank == 0) free(sigmas);
     MPI_Finalize();
 
