@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repo contains small C projects exploring parallelisation in finance. Each project uses a different model: OpenMP for multithreading, MPI for distributed processes, and OpenCL for GPU acceleration. The focus is on key concepts like performance, communication, and applying parallel methods to real-world finance problems.
+This repo contains C projects exploring parallelisation in finance. Each project uses a different model: OpenMP for multithreading, MPI for distributed processes, and OpenCL for GPU acceleration. The focus is on key concepts like performance, communication, and applying parallel methods to real-world finance problems.
 
 ## Contents
 
