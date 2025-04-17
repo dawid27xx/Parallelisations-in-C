@@ -114,5 +114,3 @@ double getStd(double *values, int len, double mean) {
     }
     return sqrt(temp / len);
 }
-
-
