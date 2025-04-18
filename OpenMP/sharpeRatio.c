@@ -80,7 +80,6 @@ int main( int argc, char **argv )
 
     omp_destroy_lock(&myLock);
 
-    printf("SharpeSum=: %f\n",sharpeSum);
 
     double end = omp_get_wtime();
     printf("Parallel computation time: %.6f seconds\n", end - start);
