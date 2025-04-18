@@ -19,16 +19,11 @@ A simple C program that uses OpenMP to speed up the calculation of rolling Sharp
 A parallel C program that estimates the price of a European call option using Monte Carlo simulation and MPI. Each process receives a unique volatility value, performs local simulations, and contributes its result using MPI_Scatter, MPI_Gather, and MPI_Bcast. The project explores how volatility affects option pricing while demonstrating core MPI communication patterns.
 
 
-**Real-Time Portfolio Monitor with Risk Alerts**
+**Distributed Market Simulation with MPI**
 
-Plan:
-Rank 0 simulates a "market feed", sending price updates (random walk)
-Other ranks:
-Maintain a fake portfolio value based on those prices
-Use MPI_Irecv to listen for updates
-Use MPI_Test to poll if new data is available
-Recompute portfolio value asynchronously
-Optionally, use MPI_Win_lock (RMA) to write a risk status flag to a shared buffer on rank 0
+A real-time market simulation using MPI, where rank 0 generates stock price updates and broadcasts them to trader ranks. Each trader manages a portfolio, receives prices asynchronously with MPI_Irecv, checks for risk conditions, and recalculates portfolio value. The project demonstrates non-blocking communication and synchronised reporting across distributed processes.
+
+
 
 ### OpenCL
 ...
